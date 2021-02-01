@@ -1,7 +1,42 @@
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+header #logo {
+  text-decoration: none;
+}
+
+header #version {
+  color: #b0b5c0;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+header #legend {
+  margin-top: 2rem;
+  color: #f0f2f5;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+#filter-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-filter {
+  margin-left: 0.5rem;
+  color: #f2f0f5;
+  font-size: 1.6rem;
+  font-weight: 100;
+
 }
 
 #container-home {
