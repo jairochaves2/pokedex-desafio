@@ -4,13 +4,18 @@ import { default as TypesMenu } from "../../components/Types";
 import getPokemonsByPage from "../../functions/pokemons";
 import "./styles.scss";
 
-import Pokedexlogo from "../../assets/images/Pokédex_logo.png";
+import Pokedexlogo from "../../assets/images/logo.png";
 
 export default function Home() {
   return (
     <div id="container-home">
       <header>
-        <img src={Pokedexlogo} id="logo" />
+        <a href="#" id="logo">
+          <img src={Pokedexlogo} alt="Logo Pokédex" />
+          <span id="version">v1.0.0</span>
+        </a>
+
+        <h3 id="legend">An index of Pokémon built as a client-side ReactJS webapp.</h3>
       </header>
 
       <main>
