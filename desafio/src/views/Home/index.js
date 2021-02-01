@@ -5,6 +5,7 @@ import getPokemonsByPage from "../../functions/pokemons";
 import "./styles.scss";
 
 import Pokedexlogo from "../../assets/images/Pokédex_logo.png";
+import PokeList from "../../components/PokeList";
 
 export default function Home() {
   return (
@@ -14,9 +15,8 @@ export default function Home() {
       </header>
 
       <main>
-        {console.log(getPokemonsByPage())}
         <TypesMenu />
-        <PokeCard />
+        <PokeList />
       </main>
       <footer></footer>
     </div>

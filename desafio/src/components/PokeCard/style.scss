@@ -2,20 +2,22 @@
   flex-direction: column;
   display: flex;
   text-align: center;
-  border-radius: 10%;
+  border-radius: 10px;
   height: 200px;
   width: 200px;
   background-color: #f0f0f0;
   padding: 16px;
-
+  margin: 16px;
+  &:hover {
+    transform: translate(0px, -5px);
+    cursor: pointer;
+  }
   .image {
     flex-grow: 3;
     justify-content: center;
     background-color: black;
     img {
-      align-self: center;
-      background-color: whitesmoke;
-      flex: 1;
+      height: 150px;
     }
   }
   .name {

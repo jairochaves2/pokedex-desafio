@@ -2,13 +2,15 @@ import React from "react";
 
 import "./style.scss";
 
-function PokeCard() {
+function PokeCard({ pokeIndex, name }) {
   return (
     <div className="pokecard">
       <div className="image">
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png" />
+        <img
+          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokeIndex}.png`}
+        />
       </div>
-      <h2 className="name">PokeName</h2>
+      <h2 className="name">{name}</h2>
     </div>
   );
 }
