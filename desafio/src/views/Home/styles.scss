@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-home {
+  main {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  #types-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    justify-content: center;
+    border-top: solid 0.1px white;
+    border-bottom: solid 0.1px white;
+    margin-bottom: 16px;
+    .type_poke {
+      flex: 1;
+      min-width: 100px;
+      max-width: 150px;
+      margin-left: 8px;
+      margin-right: 8px;
+      border-radius: 10%;
+      background-color: #b41500;
+      color: white;
+      padding: 16px;
+      text-align: center;
+      margin-top: 16px;
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        transition-delay: 1ms;
+        background-color: darken(#b41500, 5%);
+
+        transition-property: all;
+      }
+    }
+  }
+}
