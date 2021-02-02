@@ -1,7 +1,5 @@
 import React from "react";
-import PokeCard from "../../components/PokeCard";
 import { default as TypesMenu } from "../../components/Types";
-import getPokemonsByPage from "../../functions/pokemons";
 import "./styles.scss";
 
 import PokeList from "../../components/PokeList";

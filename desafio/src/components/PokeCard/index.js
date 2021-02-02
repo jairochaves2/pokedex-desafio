@@ -8,6 +8,7 @@ function PokeCard({ pokeIndex, name }) {
       <div className="image">
         <img
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokeIndex}.png`}
+          alt="Imagem do Pokemon"
         />
       </div>
       <h2 className="name">{name}</h2>
