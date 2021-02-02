@@ -16,7 +16,11 @@ function PokeList() {
     >
       {pokemons.map((pokemon, index) => {
         return (
-          <PokeCard key={index + 1} pokeIndex={index + 1} name={pokemon.name} />
+          <PokeCard
+            key={index + 1}
+            pokeIndex={pokemon.url.split("/")[6]}
+            name={pokemon.name}
+          />
         );
       })}
     </div>
