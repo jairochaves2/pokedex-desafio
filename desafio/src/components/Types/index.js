@@ -6,7 +6,7 @@ function Types() {
   const [types, setTypes] = React.useState([]);
   React.useEffect(() => {
     getTypes().then((data) => {
-      setTypes(data.results);
+      setTypes(data?.results);
     });
   }, []);
   return (
@@ -17,7 +17,7 @@ function Types() {
       </span>
 
       <div id="types-container">
-        {types.map((type) => (
+        {types?.map((type) => (
           <span className="type_poke" key={type.url}>
             {type.name}
           </span>

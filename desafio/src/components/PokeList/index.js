@@ -14,7 +14,7 @@ function PokeList() {
     <div
       style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
     >
-      {pokemons.map((pokemon, index) => {
+      {pokemons?.map((pokemon, index) => {
         return (
           <PokeCard
             key={index + 1}
