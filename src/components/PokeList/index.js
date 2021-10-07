@@ -7,7 +7,7 @@ function PokeList() {
   const [pokemons, setPokemons] = React.useState([]);
   React.useEffect(() => {
     getPokemonsByPage().then((data) => {
-      setOffset(data);
+      setPokemons(data);
     });
   }, [page]);
   return (
