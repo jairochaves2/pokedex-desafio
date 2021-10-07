@@ -9,7 +9,7 @@ function PokeList() {
     getPokemonsByPage().then((data) => {
       setPokemons(data);
     });
-  }, [page]);
+  }, [offset]);
   return (
     <div
       style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
