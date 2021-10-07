@@ -3,7 +3,7 @@ import getPokemonsByPage from "../../functions/pokemons";
 import PokeCard from "../PokeCard";
 
 function PokeList() {
-  const [page, setPages] = React.useState(0);
+  const [offset, setOffset] = React.useState(0);
   const [pokemons, setPokemons] = React.useState([]);
   React.useEffect(() => {
     getPokemonsByPage().then((data) => {
